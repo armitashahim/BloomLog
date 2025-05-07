@@ -29,7 +29,7 @@ Designed with productivity, personalization, and a touch of aesthetic in mind.
 ![To-Do List](images/todo_page.jpg)
 
 ### 👤 Profile Page
-![Profile Page](images/profile.jpg)
+![Profile Page](images/profile_page.jpg)
 
 ------
 
