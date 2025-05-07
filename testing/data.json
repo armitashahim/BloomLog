@@ -1,0 +1,68 @@
+{
+  "usernames": [
+    "TestUser1",
+    "TestUser2",
+    "TestUser3",
+    "TestUser4"
+  ],
+  "emails": [
+    "testuser1@example.com",
+    "TestUser2@example.com",
+    "testuser3@example.com",
+    "TestUser4@example.com"
+  ],
+  "passwords": [
+    "pass123",
+    "pass456",
+    "password987",
+    "password654"
+  ],
+  "journals": [
+    [
+      {
+        "name": "Diary",
+        "pages": [],
+        "locked": true
+      }
+    ],
+    [
+      {
+        "name": "Diary",
+        "pages": [],
+        "locked": true
+      }
+    ],
+    [
+      {
+        "name": "Diary",
+        "pages": [],
+        "locked": true
+      }
+    ],
+    [
+      {
+        "name": "Diary",
+        "pages": [],
+        "locked": true
+      },
+      {
+        "name": "My Test Journal",
+        "pages": [
+          "Start typing here..."
+        ]
+      },
+      {
+        "name": "My Test Journal",
+        "pages": [
+          "Start typing here..."
+        ]
+      }
+    ]
+  ],
+  "todoLists": [
+    [],
+    [],
+    [],
+    []
+  ]
+}

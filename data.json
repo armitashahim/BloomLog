@@ -1,0 +1,197 @@
+{
+  "usernames": [
+    "Armita",
+    "tugce",
+    "Armita",
+    "arina1"
+  ],
+  "emails": [
+    "armitashahim8522@gmail.com",
+    "t@gmail.com",
+    "armita@gmail.com",
+    "a@gmail.com"
+  ],
+  "passwords": [
+    "123456",
+    "123456",
+    "123456",
+    "1234"
+  ],
+  "journals": [
+    [
+      {
+        "name": "Diary",
+        "pages": [],
+        "locked": true
+      },
+      {
+        "name": "journal 1",
+        "pages": [
+          "<div style=\"text-align: center;\"><b><font size=\"7\" style=\"color: rgb(176, 39, 39);\"><i>Hello</i></font></b></div>"
+        ]
+      },
+      {
+        "name": "journal 2",
+        "pages": [
+          "Start typing here..."
+        ]
+      }
+    ],
+    [
+      {
+        "name": "Diary",
+        "pages": [
+          "<span style=\"color: rgb(185, 49, 49);\"><b>Hello i can type!</b></span>",
+          "<h3><br></h3><h3>nice bro</h3><p></p>"
+        ],
+        "locked": true,
+        "password": "123456"
+      },
+      {
+        "name": "journal 1",
+        "pages": [
+          "<font size=\"7\"><b style=\"color: rgb(216, 34, 34);\">YES</b></font>",
+          "<div><br></div><div><br></div>",
+          "<div><br></div><div><br></div>",
+          "<div><br></div><div><br></div><img src=\"file:///C:/Users/user/Desktop/University/1st%20year/EECS%201012%20(Net-centric%20Introduction%20to%20Computing)/Project/Code/Images/reaction_catidea.png\" class=\"sticker\" draggable=\"true\" style=\"position: absolute; left: 100px; top: 100px;\"><img src=\"file:///C:/Users/user/Desktop/University/1st%20year/EECS%201012%20(Net-centric%20Introduction%20to%20Computing)/Project/Code/Images/reaction_catcry.png\" class=\"sticker\" draggable=\"true\" style=\"position: absolute; left: 239.521px; top: 356.802px;\"><img src=\"file:///C:/Users/user/Desktop/University/1st%20year/EECS%201012%20(Net-centric%20Introduction%20to%20Computing)/Project/Code/Images/reaction_catquestion.png\" class=\"sticker\" draggable=\"true\" style=\"position: absolute; left: 154.521px; top: 359.802px;\">"
+        ],
+        "locked": false,
+        "password": ""
+      },
+      {
+        "name": "journal 2",
+        "pages": [
+          "Start typing here..."
+        ],
+        "locked": false,
+        "password": ""
+      },
+      {
+        "name": "journal 3",
+        "pages": [
+          "Start typing here..."
+        ]
+      }
+    ],
+    [
+      {
+        "name": "Diary",
+        "pages": [],
+        "locked": true
+      }
+    ],
+    [
+      {
+        "name": "Diary",
+        "pages": [
+          "hello &amp; good day !"
+        ],
+        "locked": true
+      },
+      {
+        "name": "planner",
+        "pages": [
+          "Start typing here..."
+        ],
+        "locked": true,
+        "password": "123"
+      },
+      {
+        "name": "planner",
+        "pages": [
+          "Start typing here..."
+        ]
+      },
+      {
+        "name": "journal 1",
+        "pages": [
+          "Start typing here..."
+        ]
+      }
+    ]
+  ],
+  "todoLists": [
+    [],
+    [
+      {
+        "category": "Website",
+        "tasks": [
+          {
+            "text": "backgrounds",
+            "done": false
+          },
+          {
+            "text": "write descriptions",
+            "done": false
+          },
+          {
+            "text": "lock function",
+            "done": false
+          },
+          {
+            "text": "sign in/register",
+            "done": false
+          },
+          {
+            "text": "footer",
+            "done": false
+          }
+        ]
+      },
+      {
+        "category": "Armita",
+        "tasks": [
+          {
+            "text": "when you press enter you can sign up",
+            "done": false
+          },
+          {
+            "text": "watch the tutorial for jest",
+            "done": false
+          },
+          {
+            "text": "clean up the js",
+            "done": false
+          },
+          {
+            "text": "write the test file (partially)",
+            "done": false
+          },
+          {
+            "text": "php contact us ",
+            "done": false
+          }
+        ]
+      }
+    ],
+    [],
+    [
+      {
+        "category": "homrwork",
+        "tasks": [
+          {
+            "text": "hi",
+            "done": true
+          },
+          {
+            "text": "hi",
+            "done": true
+          }
+        ]
+      },
+      {
+        "category": "dhn",
+        "tasks": [
+          {
+            "text": "hk",
+            "done": true
+          },
+          {
+            "text": "hj",
+            "done": true
+          }
+        ]
+      }
+    ]
+  ]
+}

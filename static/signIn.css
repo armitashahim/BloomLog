@@ -1,0 +1,365 @@
+:root {
+    --background-color: #f4f4f4;
+    --base-color: rgba(163, 171, 163, 1);
+    --secondary-color: rgba(92, 102, 103, 1);
+    --accent-color: rgb(253, 145, 147);
+    --inspire-color: rgba(255, 220, 211, 1);
+    --mainText-color: rgba(54, 55, 60, 1);
+    --headerText-color: rgb(255, 255, 255);
+    --hover-color: rgba(255, 220, 211, 1);
+    --selected-color: rgba(54, 55, 60, 1);
+    --icon-color: #ddd;
+    --register-color: rgb(253, 145, 147);
+    --contrast-color: rgba(54, 55, 60, 1);
+    --nav-color: rgb(227, 227, 227);
+    --menu-color: rgba(54, 55, 60, 1);
+    --head-color: rgba(163, 171, 163, 1);
+    --logo-color: #f4f4f4;
+    --container-color:rgb(169, 184, 169);
+}
+
+.darkmode {
+    --background-color: rgba(41, 44, 51, 1);
+    --base-color: rgba(17, 24, 34, 1);
+    --secondary-color: rgba(244, 183, 154, 1);
+    --accent-color: rgba(244, 183, 154, 1);
+    --inspire-color: rgba(255, 220, 211, 1);
+    --mainText-color: rgb(255, 255, 255);
+    --headerText-color: rgb(255, 255, 255);
+    --hover-color: rgb(216, 159, 133);
+    --selected-color: rgba(117, 88, 80, 1);
+    --icon-color: rgba(244, 183, 154, 1);
+    --register-color: rgba(117, 88, 80, 1);
+    --contrast-color: rgb(255, 255, 255);
+    --nav-color: rgb(227, 227, 227);
+    --menu-color: rgba(54, 55, 60, 1);
+    --head-color:  rgba(17, 24, 34, 1);
+    --logo-color:  rgba(244, 183, 154, 1);
+    --container-color:rgba(17, 24, 34, 1);
+}
+
+.contrast {
+    --background-color: black;
+    --base-color: black;
+    --secondary-color: rgba(239, 230, 176, 1);
+    --accent-color: rgba(239, 230, 176, 1);
+    --inspire-color: rgb(255, 255, 255);
+    --mainText-color: rgb(255, 255, 255);
+    --headerText-color: rgb(255, 255, 255);
+    --hover-color: rgb(183, 164, 102);
+    --selected-color: rgba(119, 105, 59, 1);
+    --icon-color: rgba(239, 230, 176, 1);
+    --register-color: rgba(119, 105, 59, 1);
+    --contrast-color: black;
+    --nav-color: rgb(0, 0, 0);
+    --border-color:white;
+    --menu-color: rgba(54, 55, 60, 1);
+    --head-color: rgba(239, 230, 176, 1);
+    --logo-color: rgba(239, 230, 176, 1);
+    --container-color:  rgb(33, 34, 40);
+}
+    
+
+
+*{
+    font-family: 'Inria Sans';
+
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+
+}
+.scale {
+    scale: 0.85;
+    margin-top: -4%;
+}
+#high-contrast svg {
+    fill: var(--background-color);
+}
+#high-contrast svg:last-child {
+    display: none;
+}
+.contrast #high-contrast svg:first-child {
+    display: none;
+}
+.contrast #high-contrast svg:last-child {
+    display: block;
+}
+
+#theme-switch svg {
+    fill: var(--background-color);
+}
+#theme-switch svg:last-child {
+    display: none;
+}
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+.darkmode #theme-switch svg:last-child {
+    display: block;
+}
+
+header{
+   background-color: var(--head-color);
+   display: flex;
+   justify-content: space-between;
+   top: 0;
+   
+
+}
+.circlebtn {
+    width: 45px;
+    height: 45px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+   margin-bottom: 5%;
+   
+}
+
+header .right{
+    margin-right: 2%;
+    margin-top: 0.5%;
+}
+
+.backBtn button{
+    margin-left: 2%;
+    border: none;
+    width: 120px;
+    height: 60px;
+    background-color: var(--selected-color);
+    color: #ffffff;
+}
+.backBtn a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    
+
+}
+
+.logoCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+    
+}
+.logoCont a{
+    font-weight: lighter;
+    font-size: 32px;
+    margin-bottom: 2.5%;
+    
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+.logoC {
+    background-color: var(--logo-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;               /* No inner padding */
+    width: fit-content;       /* Optional: fits the image tightly */
+  }
+  
+  .logoC img {
+    display: block;
+    object-fit: contain;
+  }
+  
+.back:hover{
+    background-color: #222;
+    color:#dcdcdc;
+}
+
+
+h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 1%;
+    margin-top: -1%;
+    color: var(--mainText-color);
+}
+
+
+.sIContainer{
+    
+    background-color: var(--container-color);
+    display: flex;
+    flex-direction: column;
+    width: 544px;
+    height: 610px;
+    gap: 40px;
+    align-items: center;
+    margin: auto;
+    border-radius: 50px;
+   
+}
+.sIText {
+    font-size: 38px;
+    padding: 4% 0 4% 0;
+    background-color: var(--secondary-color);
+    width: 544px;
+    text-align: center;
+    border-radius: 50px 50px 0 0;
+    color: var(--headerText-color);
+    
+    
+
+}
+
+#input1, #input2{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+
+
+}
+label{
+    margin-bottom: 20px;
+    font-weight: lighter;
+    font-size: 24px;
+    color: var(--logo-color);
+}
+input{
+    width: 446px;
+    height: 60px;
+    padding: 0 20px;          
+    font-size: 20px;          
+    border-radius: 4px;
+    border: 2px solid var(--secondary-color);
+    box-sizing: border-box;
+}
+#sIBtn{
+    width: 332px;
+    height: 60px;
+    border-radius: 1000px;
+    font-size: 30px;
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    margin-top: 2%;
+    padding: 10px;
+    border-color: var(--accent-color);
+}
+
+.sIContainer a {
+    font-size: 20px;
+    color:var(--selected-color);
+    text-decoration: underline;
+}
+
+
+/*Footer*/
+footer {
+    margin-top: 200px;
+    background-color: var(--selected-color);
+    color: white;
+    padding: 20px 0;
+    height: 380px;
+    
+    
+}
+
+.footerContainer {
+    gap: 10px;
+    margin: 0 auto;
+    
+}
+
+.footerText {
+    text-align: left;
+    margin-left: 10px;
+    align-items: left;
+    margin-top: 2%;
+}
+.nameFooter {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.footerText>p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -1%;
+    
+}
+
+.footerLeft {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 2% 0 0 4%;
+}
+
+.logoCircle>img {
+   
+    margin-top: -15px;
+}
+
+.footerLinks {
+    display: flex;
+    gap: 45px;
+    justify-content: right; 
+    margin: -4% 10% 8% 0;  
+    font-size: 24px; 
+}
+
+.footerLinks a {
+    color: var(--headerText-color);
+}
+
+.line {
+    margin: -4% 4% 6% 4%;
+    color: var(--headerText-color);
+}
+.socialIcons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Circular Background */
+.socialIcons a {
+    width: 50px;
+    height: 50px;
+    background-color: var(--icon-color);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+/* Ensure SVG Images Are Visible */
+.socialIcons a img {
+    width: 30px;   /* Explicit width */
+    height: 30px;  /* Explicit height */
+    display: block; /* Prevents inline spacing issues */
+}
+
+.footerBottom {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 1%;
+    
+}
+
+

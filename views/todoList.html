@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloomLog</title>
+    <link rel = "stylesheet" type = "text/css" href = "todoList.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/12cb437cbd.js" crossorigin="anonymous"></script>
+    <script src="BloomLog.js" defer></script>
+</head>
+
+<body>
+    <div class="sticky">
+        <!--inspiration quotes-->
+        <div class="quote">
+            <p id="quote-text"></p>
+        </div>
+        <!--header-->
+        <header>
+            <div class="header-left">
+                <img  class="logo" src="/Images/logo.svg" alt="logo" width="55px" height="60px">
+                <h1 class="title">loom Log</h1>
+            </div>
+            <div class = "header-right">
+                <button class="circlebtn" id="theme-switch"><!--Light/Dark Mode Button-->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"/></svg>
+                </button>
+                <button class="circlebtn" id="high-contrast"><!--Accessibility Button-->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M819-28 701-146q-48 32-103.5 49T480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-62 17-117.5T146-701L27-820l57-57L876-85l-57 57ZM480-160q45 0 85.5-12t76.5-33L480-367v207Zm335-100-59-59q21-35 32.5-75.5T800-480q0-133-93.5-226.5T480-800v205L260-815q48-31 103.5-48T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 61-17 116.5T815-260Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm40-83q119-15 199.5-104.5T800-480q0-123-80.5-212.5T520-797v634Z"/></svg>
+                </button>
+                <button class="button" id="signIn" onclick="window.location.href='/signIn';">Sign in</button>
+                <button class="button" id="register" onclick="window.location.href='/register';">Register</button>
+            </div>
+        </header>
+        <!--Navigation Pill Bar-->
+        <ul class="pill-nav">
+            <li><a href="/">Home</a></li>
+            <li class="dropdown" id="selected">
+                <a href="javascript:void(0)" class="dropbtn">My Space</a>
+                <div class="dropdown-content">
+                    <a href="/journal">Journals</a>
+                    <a href="/todoList">To-do Lists</a>
+                </div>
+            </li>
+            <li><a href="/profile">Profile</a></li>
+            <li style="float: right;"><a id="contact" href="/contactUs">Contact us</a></li>
+        </ul>
+    </div>
+
+    <!--Main Content-->
+
+    <!--Menu Sidebar-->
+    <span id="menu-button" onclick="openMenu()"><i class="fa-solid fa-bars"></i></span>
+    <div id="myMenu" class="menu">
+        <div class="menu-header">
+            <span class="menu-title">Menu</span>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+        <a href="#" onclick="toggleSubmenu('journalsSubmenu')">Journals</a>
+        <div id="journalsSubmenu" class="submenu">
+            <a href="#">Diary </a>
+            <a href="#" onclick="addJournal()" id="addJournalBtn">+ New Journal</a>
+        </div>
+        <a href="/todoList" onclick="window.location.href='/todoList'; return false;">To-Do Lists</a>
+        <img src="/Images/bubbliePot.png" alt="Bubblie" class="bubblieMenu">
+    </div>
+
+    <!--To-do List page-->
+    <div class="todo-list">
+        <h2>To-do List</h2>
+        <br>
+        <div class="todo-list-container">
+            <button id="addCategoryBtn">+ Add Category</button>
+            <div id="categoriesContainer"></div>
+        </div>
+    </div>
+    <div class="bubblie">
+        <img id="bubblie-img" src="/Images/bubblie_0.png" alt="Bubblie">
+    </div>
+    <div class="global-progress">
+        <div class="progress-bar-wrapper">
+            <div class="progress-bar" id="globalProgressBar"></div>
+        </div>
+    </div>
+
+</body>
+</html>
